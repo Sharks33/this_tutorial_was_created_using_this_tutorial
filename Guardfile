@@ -72,7 +72,6 @@ def resource_tests(resource)
 end
 
 
-
 # guard :minitest do
 #   # with Minitest::Unit
 #   watch(%r{^test/(.*)\/?test_(.*)\.rb$})
