@@ -7,4 +7,13 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def contact
+  end
+
+  def retropie
+  end
+
+  def raspbian
+  end
 end
