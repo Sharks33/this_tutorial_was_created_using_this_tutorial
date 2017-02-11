@@ -30,6 +30,12 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Contact | #{@base_title}"
   end
 
+  test "should get hardware" do
+    get hardware_path
+    assert_response :success
+    assert_select "title", "Hardware | #{@base_title}"
+  end
+
   test "should get retropie" do
     get retropie_path
     assert_response :success

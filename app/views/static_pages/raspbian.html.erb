@@ -7,29 +7,41 @@
 
 <div class="jumbotron">
   <p>
-    <span class="step">STEP 1</span>
-    Dowload the
+    <span class="step">STEP 1:</span>
+    &#160;Download the
     <a href="https://www.raspberrypi.org/downloads/noobs/">NOOBS</a>
-    installer package from
-    <a href="https://www.raspberrypi.org/downloads/noobs/">www.raspberrypi.org</a>
+    installer ZIP from
+    <a href="https://www.raspberrypi.org/downloads/noobs/">www.raspberrypi.org</a>.
   </p>
   <p>
+    NOTE: This may take a few minutes as the size of the ZIP is over 1 GB.
+  </p>
     <h2>
       <%= link_to image_tag("noobsDL.png", class: "img-gen finder", alt: "Rails logo"),
-      'https://www.raspberrypi.org/products/raspberry-pi-3-model-b/' %>
+      'https://www.raspberrypi.org/downloads/noobs/' %>
     </h2>
-  </p>
-</div>
-
-<div class="jumbotron">
-  <p><span class="step">STEP 2</span>  Unzip the the NOOBS_v2_1_0.zip</p>
-  <p>On most operating systems you should be able to achieve this simply by double clicking on the zip file</p>
 </div>
 
 <div class="jumbotron">
   <p>
-    <span class="step">STEP 3</span>
-    Drag the contents of the NOOBS file into your micro SD
+    <span class="step">STEP 2:</span>
+    &#160;Unzip the the NOOBS_v2_1_0.zip</p>
+  <p>
+    On most operating systems you should be able to achieve this simply by double clicking on the zip file, however if you experience any difficulties, you may want to try an extraction tool such as
+    <a href="http://wakaba.c3.cx/s/apps/unarchiver.html">The Unarchiver</a>
+    for OS X or
+    <a href="http://www.7-zip.org/download.html">7 Zip</a>
+    for Windows. I assume if you are using any distro of Linux that you have this covered.
+  </p>
+</div>
+
+<div class="jumbotron">
+  <p>
+    <span class="step">STEP 4:</span>
+    &#160;Drag the contents of the NOOBS file into your micro SD
+  </p>
+  <p>
+    NOTE: Make sure that you only drag the contents (highlighted in the image below) of the NOOBS folder into your SD card. Do not drag the entire NOOBS directory itself or the installer will not work. It is also worth mentioning that the SD card will need to formatted as Fat 32, however pretty much all SD cards ship in this format, so unless you have previously reformatted the SD card, this should not be an issue.
   </p>
   <p>
     <h2>
@@ -39,9 +51,32 @@
 </div>
 
 <div class="jumbotron">
-  <p class="step">STEP 4</p>
+  <p>
+    <span class="step">STEP 5:</span>
+    &#160;Eject the micro SD card from your computer and insert it into your Raspberrypi.
+  </p>
+  <p>
+    NOTE: Make sure that the Raspberrypi is not connected to any power source prior to inserting the SD card. Once the micro SD is properly inserted into the Rasberrypi, then plug in the power adapter and the the Raspberrypi should boot up to the install screen.
+  </p>
+  <p>
+    NOTE: This is probably common sense but you will also need to have the Raspberrypi connected to a monitor or TV via the HDMI input on the Rasberrypi as well as a usb connected keyboard and mouse.
+  </p>
 </div>
 
 <div class="jumbotron">
-  <p class="step">STEP 5</p>
+  <p>
+    <span class="step">STEP 6:</span>
+    &#160;Select Raspbian and click install.
+  </p>
+  <p>
+    NOTE: There are several other install options, I highly recommend choosing just the Raspbian option.
+  </p>
+  <p>
+    NOTE: The keyboard selection at the bottom is set to UK by default, you may want to change this to English, however if left on UK it should not cause any heartache.
+  </p>
+  <p>
+    <h2>
+      <%= link_to image_tag("raspbianInstall.png", class: "img-gen finder", alt: "Rails logo"), 'https://www.raspberrypi.org/products/raspberry-pi-3-model-b/' %>
+    </h2>
+  </p>
 </div>

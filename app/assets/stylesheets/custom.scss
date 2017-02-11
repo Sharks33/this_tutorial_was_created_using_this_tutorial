@@ -63,7 +63,16 @@ p {
 
 .step {
   color: yellow;
-  font-weight: bold;
+  text-align: center;
+}
+
+.hardware {
+  color: red;
+  text-align: center;
+}
+
+.layout {
+  float: left;
 }
 
 /* header */

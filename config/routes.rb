@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get  '/contact', to: 'static_pages#contact'
   get  '/retropie', to: 'static_pages#retropie'
   get  '/raspbian', to: 'static_pages#raspbian'
+  get  '/hardware', to: 'static_pages#hardware'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

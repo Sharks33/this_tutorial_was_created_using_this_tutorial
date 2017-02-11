@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= yield(:title) %> | TTWMWTT</title>
   </head>
   <body>
@@ -18,13 +19,17 @@
     </div>
 
     <div class="jumbotron">
-      <%= link_to image_tag("raspPiLogo.jpg", class: "img-gen", alt: "Rails logo"), 'https://www.raspberrypi.org/products/raspberry-pi-3-model-b/' %>
-      <p>This is a test paragraph!</p>
+      <div class="container-fluid">
+        <div class="col-md-5">
+          <%= link_to image_tag("raspPiLogo.jpg", class: "img-gen", alt: "Rails logo"), 'https://www.raspberrypi.org/products/raspberry-pi-3-model-b/' %>
+        </div>
+        <div class="col-md-7">
+          <p>This is a test paragraph!</p>
+        </div>
+      </div>
     </div>
 
-    <!-- <div>
-      <%= link_to image_tag("noobsFiles.png", class: "img-gen finder", alt: "Rails logo"), 'https://www.raspberrypi.org/products/raspberry-pi-3-model-b/' %>
-    </div> -->
+
 
   </body>
 </html>

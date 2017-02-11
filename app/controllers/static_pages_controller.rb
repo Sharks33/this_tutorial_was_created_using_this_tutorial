@@ -16,4 +16,7 @@ class StaticPagesController < ApplicationController
 
   def raspbian
   end
+
+  def hardware
+  end
 end
